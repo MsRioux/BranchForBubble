@@ -8,7 +8,7 @@ public class BubbleSort
         ob.bubbleSort(arr);
         System.out.println("Sorted array: ");
         ob.printArray(arr);
-    }
+    }//end main method
 
     void bubbleSort(int arr[])
         {
@@ -22,10 +22,10 @@ public class BubbleSort
                         temp = arr[i];
                         arr[i] = arr[j];
                         arr[j] = temp;
-                    }
-                }
-            }//end for to itterate through list
-        }
+                    }//end conditional to compare the values and find the lowest
+                }//end inner loop to itterate through array
+            }//end outter for to itterate through list
+        }//end bubbleSort method
 
         /* Prints the array */
         void printArray(int arr[])
@@ -34,6 +34,6 @@ public class BubbleSort
             {
                 System.out.print(" "+arr[i]);
             }//end loop to itterate through array
-        }
+        }//end printArray method
 
 }//end class BubbleSort
