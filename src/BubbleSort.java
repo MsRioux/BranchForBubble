@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class BubbleSort
 {
 
@@ -11,14 +12,14 @@ public class BubbleSort
     }
 
     void bubbleSort(int arr[])
-        {
+    {
 
-        }
+    }
 
-        /* Prints the array */
-        void printArray(int arr[])
-        {
-
-        }
+    /* Prints the array */
+    void printArray(int arr[])
+    {
+        System.out.println(Arrays.toString(arr));
+    }
 
 }//end class BubbleSort
