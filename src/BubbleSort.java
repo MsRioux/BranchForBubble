@@ -14,8 +14,20 @@ public class BubbleSort
 
     void bubbleSort(int arr[])
         {
-
-        }
+            int temp;
+            for(int i = 0; i < arr.length; i++)
+            {
+                for(int j = 0; j < arr.length; j++)
+                {
+                    if(arr[i] < arr[j])
+                    {
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }//end inner for
+            }//end outer for
+        }//end bubble sort method
 
         /* Prints the array */
         void printArray(int arr[])
