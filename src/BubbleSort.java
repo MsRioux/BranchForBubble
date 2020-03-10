@@ -6,7 +6,7 @@ public class BubbleSort
         BubbleSort ob = new BubbleSort();
         int arr[] = {64, 34, 25, 12, 22, 11, 90};
         ob.bubbleSort(arr);
-        System.out.println("Sorted array");
+        System.out.println("Sorted array: ");
         ob.printArray(arr);
     }
 
@@ -18,7 +18,10 @@ public class BubbleSort
         /* Prints the array */
         void printArray(int arr[])
         {
-
+            for (int i =0; i<arr.length;i++)
+            {
+                System.out.print(" "+arr[i]);
+            }//end loop to itterate through array
         }
 
 }//end class BubbleSort
