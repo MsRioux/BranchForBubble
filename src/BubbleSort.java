@@ -1,6 +1,5 @@
 public class BubbleSort
 {
-
     public static void main(String args[])
     {
         BubbleSort ob = new BubbleSort();
@@ -8,17 +7,15 @@ public class BubbleSort
         ob.bubbleSort(arr);
         System.out.println("Sorted array");
         ob.printArray(arr);
+        System.out.println("bec was here");
     }
-
     void bubbleSort(int arr[])
-        {
+    {
 
-        }
+    }
+    /* Prints the array */
+    void printArray(int arr[])
+    {
 
-        /* Prints the array */
-        void printArray(int arr[])
-        {
-
-        }
-
+    }
 }//end class BubbleSort
