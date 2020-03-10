@@ -16,7 +16,7 @@ public class BubbleSort
 
     }
 
-    /* Prints the array */
+    /* Prints the array  */
     void printArray(int arr[])
     {
         System.out.println(Arrays.toString(arr));
