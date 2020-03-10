@@ -8,14 +8,14 @@ public class BubbleSort
         ob.bubbleSort(arr);
         System.out.println("Sorted array");
         ob.printArray(arr);
-        System.out.println("Some quick comment");
+        //System.out.println("Some quick comment");
     }
 
 
     void bubbleSort(int arr[])
         {
-            int len = arr.length;
-            for(int i = 0; i < arr.length/2; i++)
+            int len = arr.length-1;
+            for(int i = 0; i < arr.length; i++)
             {
                 for(int a = 0; a < len; a++)
                 {
@@ -26,7 +26,7 @@ public class BubbleSort
                         arr[a] = temp;
                     }
                 }
-                len-=2;
+                len--;
             }
         }
 
@@ -34,7 +34,10 @@ public class BubbleSort
         /* Prints the array */
         void printArray(int arr[])
         {
-
+            for(int i = 0; i < arr.length; i++)
+            {
+                System.out.print(arr[i] + " ");
+            }
         }
 
 }//end class BubbleSort
