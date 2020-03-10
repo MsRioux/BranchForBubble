@@ -8,7 +8,7 @@ public class BubbleSort
         ob.bubbleSort(arr);
         System.out.println("Sorted array");
         ob.printArray(arr);
-    }
+    }//end of main method
 
     void bubbleSort(int arr[])
         {
