@@ -18,7 +18,9 @@ public class BubbleSort
         /* Prints the array */
         void printArray(int arr[])
         {
+            System.out.println();
 
         }
 
 }//end class BubbleSort
+//yessir noah
