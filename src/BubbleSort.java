@@ -22,16 +22,17 @@ public class BubbleSort
             {
                 for (int j = 0; j < 3; j++)
                 {
+                    if (arr[0] > arr[1])
+                    {
+                        temp = arr[0];
+                        arr[0] = arr[1];
+                        arr[1] = temp;
+                    }//end if
 
                 }//end nested for loop
+                
             }//end outer for loop
 
-            if (arr[0] > arr[1])
-            {
-                temp = arr[0];
-                arr[0] = arr[1];
-                arr[1] = temp;
-            }//end if
         }//end bubbleSort
 
         /* Prints the array */
