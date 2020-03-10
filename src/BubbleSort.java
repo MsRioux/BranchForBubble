@@ -10,15 +10,20 @@ public class BubbleSort
         ob.printArray(arr);
     }
 
-    void bubbleSort(int arr[])
-        {
-
+    void bubbleSort(int arr[]) {
+        for (int i = 0; i < arr.length-1; i++) {
+            for (int j = 0; j < arr.length-1-i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
         }
+    }
 
-        /* Prints the array */
-        void printArray(int arr[])
-        {
+    void printArray(int arr[]){
 
-        }
+    }
 
 }//end class BubbleSort
