@@ -12,13 +12,26 @@ public class BubbleSort
 
     void bubbleSort(int arr[])
         {
+            int tempPos;
+            for(int i = 0; i < arr.length; i++)
+            {
+                for(int j = 0; j < arr.length-1; j++)
+                {
+                    if(arr[j] > arr[j+1])
+                    {
+                        tempPos = arr[j+1];
+                        arr[j+1] = arr[j];
+                        arr[j] = tempPos;
 
+                    }
+                }
+            } //end for loop
         }
 
         /* Prints the array */
         void printArray(int arr[])
         {
-
+            
         }
 
 }//end class BubbleSort
