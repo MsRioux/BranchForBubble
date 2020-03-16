@@ -12,17 +12,19 @@ public class BubbleSort
 
     void bubbleSort(int arr[])
         {
-            int[] temp = new int[arr.length];
-            for(int i=0; i<arr.length; i++)
+            //int[] temp = new int[arr.length];
+            int temp = 0;
+            for(int i=arr.length-1; i<0; i++)
             {
-                if(arr[i] > arr[i+1])
-                {
-                    for (int j = i; j<arr.length; j++)
+                    for (int j = 0; j<i; j++)
                     {
-                        if(arr[i] > arr[i+1])
-                            temp[i] = arr[i+1];
+                        if(arr[j] > arr[i+j])
+                        {
+                            temp = arr[j];
+                            arr[j] = arr[i+j];
+                            arr[i+j] = temp;
+                        }//end of if
                     }//end of nested for loop
-                }// end of if
             }//end of for loop
         }//end of bubble sort
 
