@@ -11,22 +11,22 @@ public class BubbleSort
     }
 
     void bubbleSort(int arr[])
+    {
+        //int[] temp = new int[arr.length];
+        int temp = 0;
+        for(int i=arr.length-1; i>0; i--)
         {
-            //int[] temp = new int[arr.length];
-            int temp = 0;
-            for(int i=arr.length-1; i<0; i++)
+            for (int j = 0; j<i; j++)
             {
-                    for (int j = 0; j<i; j++)
-                    {
-                        if(arr[j] > arr[i+j])
-                        {
-                            temp = arr[j];
-                            arr[j] = arr[i+j];
-                            arr[i+j] = temp;
-                        }//end of if
-                    }//end of nested for loop
-            }//end of for loop
-        }//end of bubble sort
+                if(arr[j] > arr[j+1])
+                {
+                    temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }//end of if
+            }//end of nested for loop
+        }//end of for loop
+    }//end of bubble sort
 
         /* Prints the array */
         void printArray(int arr[])
