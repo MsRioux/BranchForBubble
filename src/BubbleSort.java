@@ -18,7 +18,9 @@ public class BubbleSort
         /* Prints the array */
         void printArray(int arr[])
         {
-
+            for(int i = 0; i < arr.length; i++) {
+    		    System.out.print(arr[i] + " ");
+    	    }
         }
 
 }//end class BubbleSort
