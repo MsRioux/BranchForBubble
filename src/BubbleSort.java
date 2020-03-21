@@ -3,8 +3,16 @@ public class BubbleSort
     public static void main(String args[])
     {
         BubbleSort ob = new BubbleSort();
-        int arr[] = {36, 23, 115,212, 42, 12, 42};
-        ob.bubbleSongth - i - 1; j++)
+        int arr[] = {64, 34, 25, 12, 22, 11, 90};
+        ob.bubbleSort(arr);
+        System.out.println("Sorted array");
+        ob.printArray(arr);
+    } // end of main method
+    void bubbleSort(int arr[])
+    {
+        for (int i = 0; i < arr.length - 1; i++)
+        {
+            for (int j = 0; j < arr.length - i - 1; j++)
             {
                 if (arr[j] > arr[j+1])
                 {
